@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <link href="./style.css" rel="stylesheet">
+        <title>Hope's Period scriptCode Interpreter</title>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        
+
+        <header>
+            <div class="logoItem"></div>
+            <div class="logo">
+                <strong>H</strong>ope's&nbsp;
+                <strong>P</strong>eriod&nbsp; 
+                <strong>S</strong>cript&nbsp;
+                <strong>C</strong>ode&nbsp;
+                <strong>I</strong>nterpreter&nbsp;
+            </div>
+
+        </header>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class = "SelectCommandBoard">
+            <label for ="SelectCommand">
+                <div class="Context">
+                    <b>원하는 명령을 선택해 주세요:&nbsp;</b>
+                </div> 
+            </label>
+
+            <select id ="SelectCommand" onchange="OnChangeCommand()">
+                <option value="" selected disabled> 명령을 선택하세요.</option>
+            </select>
+        </div>
+        <div class ="Context">
+            <b>설명: </b>
+            <span id="Descript">명령을 선택하세요.</span>
+        </div>
+
+        <p>&nbsp;</p>
+        <div class="Context">
+            결과: <span class = result></span>
+        </div>
+        <div class="Context">
+            <button class ="ShowResult">코드 생성하기</button>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <section class="Parameters">
+            <fieldset class = "ParameterField" id = "EssentialParameters">
+                <legend>Essential</legend>
+                <p>&nbsp;</p>
+            </fieldset>
+            <p>&nbsp;</p>
+            <fieldset class = "ParameterField" id = "SubParameters">
+                <legend>Sub</legend>
+                <p>&nbsp;</p>
+            </fieldset>
+            </fieldset>
+        </section>
+
+    </body>
+</html>
